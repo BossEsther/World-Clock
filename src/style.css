@@ -19,7 +19,7 @@ h1{
 }
 h2{
     margin-bottom: 7px;
-    font-size: 36px;
+    font-size: 34px;
 
     
 }
@@ -40,13 +40,16 @@ select{
     padding-bottom: 20px ;
     border-bottom: 1px dashed rgba(0, 0, 0, 0.4);
 }
+.city:last-child{
+    border: none;
+}
 .date{
     opacity: 0.8;
 }
 .time{
     font-size:45px;
     font-weight: bolder;
-    margin-top: 45px;
+    margin-top: 30px;
 }
 .time small {
     font-size: 20px;
