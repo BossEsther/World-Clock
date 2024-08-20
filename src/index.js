@@ -21,12 +21,26 @@ function updateTime(){
         lagosTimeElement.innerHTML = lagosTime.format("hh:mm:ss [<small>]A[<small/>]");
     }
 
+    let romeCity = document.querySelector("#roman");
+    if(romeCity){
+        let romeDateElement = romeCity.querySelector(".date");
+        let romeTimeElement = romeCity.querySelector(".time");
+
+        let romeTime = moment().tz("Europe/Rome");
+
+        romeDateElement.innerHTML = romeTime.format("MMMM Do YYYY");
+        romeTimeElement.innerHTML = romeTime.format("hh:mm:ss [<small>]A[<small/>]");
+    }
+
 
 
 }
 
 function updateCountry(event){
     let timeZone = event.target.value;
+    if(timeZone === "current"){
+        timeZone = moment.tz.guess();
+    }
     let cityName = timeZone.replace("_", " ").split("/")[1];
     let cityTimeZone = moment().tz(timeZone);
     let cityTimeZoneElement = document.querySelector("#change-city");
@@ -40,6 +54,7 @@ function updateCountry(event){
         "A"
     )}</small></div>
     </div>
+    <a href="/" class="citylink">All Cities</a>
     `;
 }
 

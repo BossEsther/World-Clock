@@ -14,14 +14,238 @@
 <body>
     <div class="clock-container">
         <h1>
-            World Clock
+            ⏱ WORLD CLOCK
         </h1>
         
         <select id="countries">
             <option value="">Choose a city...</option>
+            <option value="current">My Current Location</option>
             <option value="Europe/Paris">Paris</option>
             <option value="Australia/Sydney">Sydney</option>
             <option value="Pacific/Bougainville">Bougainville</option>
+            <Option value='Etc/Greenwich'>Greenwich</Option>
+            <Option value='Etc/UCT'>UCT</Option>
+            <Option value='Etc/UTC'>UTC</Option>
+            <Option value='Etc/Universal'>Universal</Option>
+            <Option value='Etc/Zulu'>Zulu</Option>
+            <Option value='Europe/Amsterdam'>Amsterdam</Option>
+            <Option value='Europe/Andorra'>Andorra</Option>
+            <Option value='Europe/Astrakhan'>Astrakhan</Option>
+            <Option value='Europe/Athens'>Athens</Option>
+            <Option value='Europe/Belfast'>Belfast</Option>
+            <Option value='Europe/Belgrade'>Belgrade</Option>
+            <Option value='Europe/Berlin'>Berlin</Option>
+            <Option value='Europe/Bratislava'>Bratislava</Option>
+            <Option value='Europe/Brussels'>Brussels</Option>
+            <Option value='Europe/Bucharest'>Bucharest</Option>
+            <Option value='Europe/Budapest'>Budapest</Option>
+            <Option value='Europe/Busingen'>Busingen</Option>
+            <Option value='Europe/Chisinau'>Chisinau</Option>
+            <Option value='Europe/Copenhagen'>Copenhagen</Option>
+            <Option value='Europe/Dublin'>Dublin</Option>
+            <Option value='Europe/Gibraltar'>Gibraltar</Option>
+            <Option value='Europe/Guernsey'>Guernsey</Option>
+            <Option value='Europe/Helsinki'>Helsinki</Option>
+            <Option value='Europe/Isle_of_Man'>Isle_of_Man</Option>
+            <Option value='Europe/Istanbul'>Istanbul</Option>
+            <Option value='Europe/Jersey'>Jersey</Option>
+            <Option value='Europe/Kaliningrad'>Kaliningrad</Option>
+            <Option value='Europe/Kiev'>Kiev</Option>
+            <Option value='Europe/Kirov'>Kirov</Option>
+            <Option value='Europe/Lisbon'>Lisbon</Option>
+            <Option value='Europe/Ljubljana'>Ljubljana</Option>
+            <Option value='Europe/London'>London</Option>
+            <Option value='Europe/Luxembourg'>Luxembourg</Option>
+            <Option value='Europe/Madrid'>Madrid</Option>
+            <Option value='Europe/Malta'>Malta</Option>
+            <Option value='Europe/Mariehamn'>Mariehamn</Option>
+            <Option value='Europe/Minsk'>Minsk</Option>
+            <Option value='Europe/Monaco'>Monaco</Option>
+            <Option value='Europe/Moscow'>Moscow</Option>
+            <Option value='Europe/Nicosia'>Nicosia</Option> 
+            <Option value='Africa/Abidjan'>Africa/Abidjan</Option>
+            <Option value='Africa/Accra'>Africa/Accra</Option>
+            <Option value='Africa/Addis_Ababa'>Africa/Addis_Ababa</Option>
+            <Option value='Africa/Algiers'>Africa/Algiers</Option>
+            <Option value='Africa/Asmara'>Africa/Asmara</Option>
+            <Option value='Africa/Asmera'>Africa/Asmera</Option>
+            <Option value='Africa/Bamako'>Africa/Bamako</Option>
+            <Option value='Africa/Bangui'>Africa/Bangui</Option>
+            <Option value='Africa/Banjul'>Africa/Banjul</Option>
+            <Option value='Africa/Bissau'>Africa/Bissau</Option>
+            <Option value='Africa/Blantyre'>Africa/Blantyre</Option>
+            <Option value='Africa/Brazzaville'>Africa/Brazzaville</Option>
+            <Option value='Africa/Bujumbura'>Africa/Bujumbura</Option>
+            <Option value='Africa/Cairo'>Africa/Cairo</Option>
+            <Option value='Africa/Casablanca'>Africa/Casablanca</Option>
+            <Option value='Africa/Ceuta'>Africa/Ceuta</Option>
+            <Option value='Africa/Conakry'>Africa/Conakry</Option>
+            <Option value='Africa/Dakar'>Africa/Dakar</Option>
+            <Option value='Africa/Dar_es_Salaam'>Africa/Dar_es_Salaam</Option>
+            <Option value='Africa/Djibouti'>Africa/Djibouti</Option>
+            <Option value='Africa/Douala'>Africa/Douala</Option>
+            <Option value='Africa/El_Aaiun'>Africa/El_Aaiun</Option>
+            <Option value='Africa/Freetown'>Africa/Freetown</Option>
+            <Option value='Africa/Gaborone'>Africa/Gaborone</Option>
+            <Option value='Africa/Harare'>Africa/Harare</Option>
+            <Option value='Africa/Johannesburg'>Africa/Johannesburg</Option>
+            <Option value='Africa/Juba'>Africa/Juba</Option>
+            <Option value='Africa/Kampala'>Africa/Kampala</Option>
+            <Option value='Africa/Khartoum'>Africa/Khartoum</Option>
+            <Option value='Africa/Kigali'>Africa/Kigali</Option>
+            <Option value='Africa/Kinshasa'>Africa/Kinshasa</Option>
+            <Option value='Africa/Lagos'>Africa/Lagos</Option>
+            <Option value='Africa/Libreville'>Africa/Libreville</Option>
+            <Option value='Africa/Lome'>Africa/Lome</Option>
+            <Option value='Africa/Luanda'>Africa/Luanda</Option>
+            <Option value='Africa/Lubumbashi'>Africa/Lubumbashi</Option>
+            <Option value='Africa/Lusaka'>Africa/Lusaka</Option>
+            <Option value='Africa/Malabo'>Africa/Malabo</Option>
+            <Option value='Africa/Maputo'>Africa/Maputo</Option>
+            <Option value='Africa/Maseru'>Africa/Maseru</Option>
+            <Option value='Africa/Mbabane'>Africa/Mbabane</Option>
+            <Option value='Africa/Mogadishu'>Africa/Mogadishu</Option>
+            <Option value='Africa/Monrovia'>Africa/Monrovia</Option>
+            <Option value='Africa/Nairobi'>Africa/Nairobi</Option>
+            <Option value='Africa/Ndjamena'>Africa/Ndjamena</Option>
+            <Option value='Africa/Niamey'>Africa/Niamey</Option>
+            <Option value='Africa/Nouakchott'>Africa/Nouakchott</Option>
+            <Option value='Africa/Ouagadougou'>Africa/Ouagadougou</Option>
+            <Option value='Africa/Porto-Novo'>Africa/Porto-Novo</Option>
+            <Option value='Africa/Sao_Tome'>Africa/Sao_Tome</Option>
+            <Option value='Africa/Timbuktu'>Africa/Timbuktu</Option>
+            <Option value='Africa/Tripoli'>Africa/Tripoli</Option>
+            <Option value='Africa/Tunis'>Africa/Tunis</Option>
+            <Option value='Africa/Windhoek'>Africa/Windhoek</Option>
+            <Option value='America/Adak'>America/Adak</Option>
+            <Option value='America/Anchorage'>America/Anchorage</Option>
+            <Option value='America/Anguilla'>America/Anguilla</Option>
+            <Option value='America/Antigua'>America/Antigua</Option>
+            <Option value='Asia/Yangon'>Asia/Yangon</Option>
+            <Option value='Asia/Yekaterinburg'>Asia/Yekaterinburg</Option>
+            <Option value='Asia/Yerevan'>Asia/Yerevan</Option>
+            <Option value='Atlantic/Azores'>Atlantic/Azores</Option>
+            <Option value='Atlantic/Bermuda'>Atlantic/Bermuda</Option>
+            <Option value='Atlantic/Canary'>Atlantic/Canary</Option>
+            <Option value='Atlantic/Cape_Verde'>Atlantic/Cape_Verde</Option>
+            <Option value='Atlantic/Faeroe'>Atlantic/Faeroe</Option>
+            <Option value='Atlantic/Faroe'>Atlantic/Faroe</Option>
+            <Option value='Atlantic/Jan_Mayen'>Atlantic/Jan_Mayen</Option>
+            <Option value='Atlantic/Madeira'>Atlantic/Madeira</Option>
+            <Option value='Atlantic/Reykjavik'>Atlantic/Reykjavik</Option>
+            <Option value='Atlantic/South_Georgia'>Atlantic/South_Georgia</Option>
+            <Option value='Atlantic/St_Helena'>Atlantic/St_Helena</Option>
+            <Option value='Atlantic/Stanley'>Atlantic/Stanley</Option>
+            <Option value='Australia/ACT'>Australia/ACT</Option>
+            <Option value='Australia/Adelaide'>Australia/Adelaide</Option>
+            <Option value='Australia/Brisbane'>Australia/Brisbane</Option>
+            <Option value='Australia/Broken_Hill'>Australia/Broken_Hill</Option>
+            <Option value='Australia/Canberra'>Australia/Canberra</Option>
+            <Option value='Australia/Currie'>Australia/Currie</Option>
+            <Option value='Australia/Darwin'>Australia/Darwin</Option>
+            <Option value='Australia/Eucla'>Australia/Eucla</Option>
+            <Option value='Australia/Hobart'>Australia/Hobart</Option>
+            <Option value='Australia/LHI'>Australia/LHI</Option>
+            <Option value='Australia/Lindeman'>Australia/Lindeman</Option>
+            <Option value='Australia/Lord_Howe'>Australia/Lord_Howe</Option>
+            <Option value='Australia/Melbourne'>Australia/Melbourne</Option>
+            <Option value='Australia/NSW'>Australia/NSW</Option>
+            <Option value='Australia/North'>Australia/North</Option>
+            <Option value='Australia/Perth'>Australia/Perth</Option>
+            <Option value='Australia/Queensland'>Australia/Queensland</Option>
+            <Option value='Australia/South'>Australia/South</Option>
+            <Option value='Australia/Sydney'>Australia/Sydney</Option>
+            <Option value='Australia/Tasmania'>Australia/Tasmania</Option>
+            <Option value='Australia/Victoria'>Australia/Victoria</Option>
+            <Option value='Australia/West'>Australia/West</Option>
+            <Option value='Australia/Yancowinna'>Australia/Yancowinna</Option>
+            <Option value='Brazil/Acre'>Brazil/Acre</Option>
+            <Option value='Brazil/DeNoronha'>Brazil/DeNoronha</Option>
+            <Option value='Brazil/East'>Brazil/East</Option>
+            <Option value='Brazil/West'>Brazil/West</Option>
+            <Option value='Canada/Atlantic'>Canada/Atlantic</Option>
+            <Option value='Canada/Central'>Canada/Central</Option>
+            <Option value='Canada/Eastern'>Canada/Eastern</Option>
+            <Option value='Canada/Mountain'>Canada/Mountain</Option>
+            <Option value='Canada/Newfoundland'>Canada/Newfoundland</Option>
+            <Option value='Canada/Pacific'>Canada/Pacific</Option>
+            <Option value='Canada/Saskatchewan'>Canada/Saskatchewan</Option>
+            <Option value='Canada/Yukon'>Canada/Yukon</Option>
+            <Option value='Chile/Continental'>Chile/Continental</Option>
+            <Option value='Chile/EasterIsland'>Chile/EasterIsland</Option>
+            <Option value='Indian/Antananarivo'>Indian/Antananarivo</Option>
+            <Option value='Indian/Chagos'>Indian/Chagos</Option>
+            <Option value='Indian/Christmas'>Indian/Christmas</Option>
+            <Option value='Indian/Cocos'>Indian/Cocos</Option>
+            <Option value='Indian/Comoro'>Indian/Comoro</Option>
+            <Option value='Indian/Kerguelen'>Indian/Kerguelen</Option>
+            <Option value='Indian/Mahe'>Indian/Mahe</Option>
+            <Option value='Indian/Maldives'>Indian/Maldives</Option>
+            <Option value='Indian/Mauritius'>Indian/Mauritius</Option>
+            <Option value='Indian/Mayotte'>Indian/Mayotte</Option>
+            <Option value='Indian/Reunion'>Indian/Reunion</Option>
+            <Option value='Mexico/BajaNorte'>Mexico/BajaNorte</Option>
+            <Option value='Mexico/BajaSur'>Mexico/BajaSur</Option>
+            <Option value='Mexico/General'>Mexico/General</Option>
+            <Option value='Pacific/Apia'>Pacific/Apia</Option>
+            <Option value='Pacific/Auckland'>Pacific/Auckland</Option>
+            <Option value='Pacific/Bougainville'>Pacific/Bougainville</Option>
+            <Option value='Pacific/Chatham'>Pacific/Chatham</Option>
+            <Option value='Pacific/Chuuk'>Pacific/Chuuk</Option>
+            <Option value='Pacific/Easter'>Pacific/Easter</Option>
+            <Option value='Pacific/Efate'>Pacific/Efate</Option>
+            <Option value='Pacific/Enderbury'>Pacific/Enderbury</Option>
+            <Option value='Pacific/Fakaofo'>Pacific/Fakaofo</Option>
+            <Option value='Pacific/Fiji'>Pacific/Fiji</Option>
+            <Option value='Pacific/Funafuti'>Pacific/Funafuti</Option>
+            <Option value='Pacific/Galapagos'>Pacific/Galapagos</Option>
+            <Option value='Pacific/Gambier'>Pacific/Gambier</Option>
+            <Option value='Pacific/Guadalcanal'>Pacific/Guadalcanal</Option>
+            <Option value='Pacific/Guam'>Pacific/Guam</Option>
+            <Option value='Pacific/Honolulu'>Pacific/Honolulu</Option>
+            <Option value='Pacific/Johnston'>Pacific/Johnston</Option>
+            <Option value='Pacific/Kiritimati'>Pacific/Kiritimati</Option>
+            <Option value='Pacific/Kosrae'>Pacific/Kosrae</Option>
+            <Option value='Pacific/Kwajalein'>Pacific/Kwajalein</Option>
+            <Option value='Pacific/Majuro'>Pacific/Majuro</Option>
+            <Option value='Pacific/Marquesas'>Pacific/Marquesas</Option>
+            <Option value='Pacific/Midway'>Pacific/Midway</Option>
+            <Option value='Pacific/Nauru'>Pacific/Nauru</Option>
+            <Option value='Pacific/Niue'>Pacific/Niue</Option>
+            <Option value='Pacific/Norfolk'>Pacific/Norfolk</Option>
+            <Option value='Pacific/Noumea'>Pacific/Noumea</Option>
+            <Option value='Pacific/Pago_Pago'>Pacific/Pago_Pago</Option>
+            <Option value='Pacific/Palau'>Pacific/Palau</Option>
+            <Option value='Pacific/Pitcairn'>Pacific/Pitcairn</Option>
+            <Option value='Pacific/Pohnpei'>Pacific/Pohnpei</Option>
+            <Option value='Pacific/Ponape'>Pacific/Ponape</Option>
+            <Option value='Pacific/Port_Moresby'>Pacific/Port_Moresby</Option>
+            <Option value='Pacific/Rarotonga'>Pacific/Rarotonga</Option>
+            <Option value='Pacific/Saipan'>Pacific/Saipan</Option>
+            <Option value='Pacific/Samoa'>Pacific/Samoa</Option>
+            <Option value='Pacific/Tahiti'>Pacific/Tahiti</Option>
+            <Option value='Pacific/Tarawa'>Pacific/Tarawa</Option>
+            <Option value='Pacific/Tongatapu'>Pacific/Tongatapu</Option>
+            <Option value='Pacific/Truk'>Pacific/Truk</Option>
+            <Option value='Pacific/Wake'>Pacific/Wake</Option>
+            <Option value='Pacific/Wallis'>Pacific/Wallis</Option>
+            <Option value='Pacific/Yap'>Pacific/Yap</Option>
+            <Option value='US/Alaska'>US/Alaska</Option>
+            <Option value='US/Aleutian'>US/Aleutian</Option>
+            <Option value='US/Arizona'>US/Arizona</Option>
+            <Option value='US/Central'>US/Central</Option>
+            <Option value='US/East-Indiana'>US/East-Indiana</Option>
+            <Option value='US/Eastern'>US/Eastern</Option>
+            <Option value='US/Hawaii'>US/Hawaii</Option>
+            <Option value='US/Indiana-Starke'>US/Indiana-Starke</Option>
+            <Option value='US/Michigan'>US/Michigan</Option>
+            <Option value='US/Mountain'>US/Mountain</Option>
+            <Option value='US/Pacific'>US/Pacific</Option>
+            <Option value='US/Pacific-New'>US/Pacific-New</Option>
+            <Option value='US/Samoa'>US/Samoa</Option>
+
+
+
         </select>
         <div id="change-city">
             <div class="city" id="sydney">
@@ -31,7 +255,7 @@
                 </div>
                 <div class="time"></div>
             </div> 
-        </div>      
+              
             <div class="city" id="lagos">
                 <div>
                     <h2>Lagos </h2> 
@@ -39,6 +263,15 @@
                 </div>
                 <div class="time"></div>
             </div>
+
+            <div class="city" id="roman">
+                <div>
+                    <h2>Rome </h2> 
+                    <div class="date"></div>
+                </div>
+                <div class="time"></div>
+            </div>
+        </div>
     </div>
 
     <footer>
